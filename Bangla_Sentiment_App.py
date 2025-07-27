@@ -346,14 +346,14 @@ with gr.Blocks(css=css, title="Bangla Sentiment Classifier") as interface:
     )
 
 if __name__ == "__main__":
-    print("⇛Starting Bangla Sentiment Analysis App...")
+    print("⇛ Starting Bangla Sentiment Analysis App...")
     
     # Kill existing Gradio processes
-    print("⇛Cleaning up existing sessions...")
+    print("⇛ Cleaning up existing sessions...")
     kill_existing_gradio_processes()
     
     # Wait a moment for ports to be freed
-    print("⇛Waiting for ports to be freed...")
+    print("⇛ Waiting for ports to be freed...")
     time.sleep(3)
     
     # Find available port
@@ -362,8 +362,8 @@ if __name__ == "__main__":
         print("❌ Could not find available port. Please close other applications and try again.")
         sys.exit(1)
     
-    print(f"⇛Using port {available_port}")
-    print("⇛Generating public shareable link...")
+    print(f"⇛ Using port {available_port}")
+    print("⇛ Generating public shareable link...")
 
     try:
         interface.launch(
